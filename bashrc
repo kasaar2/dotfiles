@@ -30,7 +30,7 @@ alias gcm='git commit -m'
 # MISC
 alias ev='vim ~/.vimrc'
 alias eb='vim ~/.bashrc'
-alias sb='source ~/.bashrc; source ~/.bash_profile'
+alias sb='source ~/.bashrc'
 alias jq="jq --indent 7 --sort-keys"
 alias tabs="column -t -s$'\t'"
 alias zcat="gunzip -c"
