@@ -3,11 +3,13 @@ alias l="ls -alGhtr"
 alias u="cd .."
 alias d="cd"
 alias p="pwd"
+alias v="vim"
+alias h='f(){ history | grep "$@" | tail -n20 | head -n -1; unset -f f; }; f'
+
 alias dp="cd ~/Desktop"
 alias lr='ls -AlFh'
 alias l1='ls -1FG'
 alias du="du -h -d1 -S"
-alias recent='f(){ history | grep "$@" | tail -n20 | head -n -1; unset -f f; }; f'
 
 # PYTHON
 ## launch ipython instance that is sensitive to it's virtual environment
@@ -15,18 +17,20 @@ alias ip='python -c "import IPython; IPython.terminal.ipapp.launch_new_instance(
 alias jpn='jupyter notebook'
 
 # GIT
-alias gs='git status'
 alias ga='git add'
-alias gd='git diff'
 alias gc='git commit'
-alias gcm='git commit -m'
-alias gl='git log --oneline -5'
+alias gd='git diff'
 alias gh="git log --pretty=format:'%Cgreen%h %C(yellow)%an %ae %Cblue%ad %Creset%s %d' --graph --date=short"
+alias gl='git log --oneline -5'
+alias gs='git status'
+alias gu='git add -u'
+alias gw='git commit -m "wip"'
+alias gcm='git commit -m'
 
 # MISC
 alias ev='vim ~/.vimrc'
 alias eb='vim ~/.bashrc'
-alias sb='source ~/.bashrc'
+alias sb='source ~/.bashrc; source ~/.bash_profile'
 alias jq="jq --indent 7 --sort-keys"
 alias tabs="column -t -s$'\t'"
 alias zcat="gunzip -c"
